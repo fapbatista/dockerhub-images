@@ -1,4 +1,5 @@
 FROM fapbatista/tf-keras-torch
+RUN /usr/bin/python3 -m pip install --upgrade pip
 RUN pip3 install Pillow
 RUN pip3 install Cython
 RUN pip3 install fasttext
@@ -7,6 +8,9 @@ RUN pip3 install spacy
 RUN pip3 install jupyter
 RUN pip3 install kfp 
 RUN pip3 install transformers
+RUN pip3 install nltk
+RUN apt-get update -y
+RUN apt-get install git -y
 RUN export PATH=$PATH:~/.local/bin
 RUN which dsl-compile
 ENV NB_PREFIX /
