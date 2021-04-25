@@ -4,6 +4,6 @@ RUN pip3 install numpy
 RUN pip3 install keras
 RUN pip3 install requests
 RUN pip3 install pandas
-RUN pip3 install torch==1.5.1+cu101 torchvision==0.6.1+cu101 -f https://download.pytorch.org/whl/torch_stable.html
+RUN pip3 install torch==1.7.1+cu110 torchvision==0.8.2+cu110 -f https://download.pytorch.org/whl/torch_stable.html
 RUN pip3 install sklearn
 RUN pip3 install boto3
